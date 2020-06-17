@@ -1,0 +1,11 @@
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\bin\Debug\netcoreapp3.1\bingoTask.exe
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\bin\Debug\netcoreapp3.1\bingoTask.deps.json
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\bin\Debug\netcoreapp3.1\bingoTask.runtimeconfig.json
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\bin\Debug\netcoreapp3.1\bingoTask.runtimeconfig.dev.json
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\bin\Debug\netcoreapp3.1\bingoTask.dll
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\bin\Debug\netcoreapp3.1\bingoTask.pdb
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\obj\Debug\netcoreapp3.1\bingoTask.csprojAssemblyReference.cache
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\obj\Debug\netcoreapp3.1\bingoTask.AssemblyInfoInputs.cache
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\obj\Debug\netcoreapp3.1\bingoTask.AssemblyInfo.cs
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\obj\Debug\netcoreapp3.1\bingoTask.dll
+C:\Users\iiflu\Desktop\Uni\Intro Programming\bingoTask\obj\Debug\netcoreapp3.1\bingoTask.pdb
