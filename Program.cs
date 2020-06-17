@@ -51,12 +51,17 @@ namespace bingoTask {
                             }
                         }
                         if (orderChoice == 2) {
-                            List<int> ascendingDrawn = new List<int> ();
-                            ascendingDrawn = drawnNumbers;
-                            ascendingDrawn.Sort ();
+                            List<int> ascendingDrawn = drawnNumbers;
+                            var maxValue = 0;
 
-                            for (var i = 0; i < ascendingDrawn.Count; i++) {
-                                System.Console.Write (ascendingDrawn[i] + " ");
+                        for (var i = 0; i < drawnNumbers.Count; i++) {
+                            if (drawnNumbers[i] > maxValue) {
+                                maxValue = drawnNumbers[i];
+                            }
+                        }
+                            for (var i = 0; i <= maxValue; i++) {
+                                if (ascendingDrawn.Contains(i))
+                                System.Console.Write (i + " ");
                             }
                         }
                         System.Console.WriteLine ();
@@ -72,7 +77,7 @@ namespace bingoTask {
                                 System.Console.WriteLine ("This number HAS been drawn.");
                                 break;
                             } else if (i == drawnNumbers.Count - 1) {
-                                System.Console.WriteLine("This number HAS NOT been drawn.");
+                                System.Console.WriteLine ("This number HAS NOT been drawn.");
                             }
                         }
                     } else if (userInput == 4) {
