@@ -21,17 +21,21 @@ namespace bingoTask {
 
                     //draw number
                     if (userInput == 1) {
-                        var drawn = rnd.Next (1, magicNumber + 1);
+                        if (drawnNumbers.Count == magicNumber) {
+                            System.Console.WriteLine ("====================================");
+                            System.Console.WriteLine ("We've drawn all the numbers!");
+                        } else {
+                            var drawn = rnd.Next (1, magicNumber + 1);
 
-                        //prevent duplicate draws
-                        while (drawnNumbers.Contains (drawn)) {
-                            drawn = rnd.Next (1, magicNumber + 1);
+                            //prevent duplicate draws
+                            while (drawnNumbers.Contains (drawn)) {
+                                drawn = rnd.Next (1, magicNumber + 1);
+                            }
+                            System.Console.WriteLine ("====================================");
+                            System.Console.WriteLine ("Drawn number is: " + drawn);
+
+                            drawnNumbers.Add (drawn);
                         }
-                        System.Console.WriteLine ("====================================");
-                        System.Console.WriteLine ("Drawn number is: " + drawn);
-
-                        drawnNumbers.Add (drawn);
-
                     } else if (userInput == 2) {
                         var orderChoice = 0;
 
@@ -56,19 +60,19 @@ namespace bingoTask {
                             List<int> ascendingDrawn = drawnNumbers;
                             var maxValue = 0;
 
-                        for (var i = 0; i < drawnNumbers.Count; i++) {
-                            if (drawnNumbers[i] > maxValue) {
-                                maxValue = drawnNumbers[i];
+                            for (var i = 0; i < drawnNumbers.Count; i++) {
+                                if (drawnNumbers[i] > maxValue) {
+                                    maxValue = drawnNumbers[i];
+                                }
                             }
-                        }   
                             for (var i = 0; i <= maxValue; i++) {
-                                if (ascendingDrawn.Contains(i))
-                                System.Console.Write (i + " ");
+                                if (ascendingDrawn.Contains (i))
+                                    System.Console.Write (i + " ");
                             }
                         }
                         System.Console.WriteLine ();
-                    
-                    //check for specific number
+
+                        //check for specific number
                     } else if (userInput == 3) {
                         System.Console.WriteLine ("====================================");
                         System.Console.Write ("What number are we checking for?: ");
@@ -83,7 +87,7 @@ namespace bingoTask {
                                 System.Console.WriteLine ("This number HAS NOT been drawn.");
                             }
                         }
-                    //exit program
+                        //exit program
                     } else if (userInput == 4) {
                         System.Console.WriteLine ("====================================");
                         System.Console.WriteLine ("Goodbye");
@@ -93,7 +97,7 @@ namespace bingoTask {
                         System.Console.WriteLine ("That isn't a valid option, try again.");
                     }
                 }
-            //not a valid option
+                //not a valid option
             } else {
                 System.Console.WriteLine ("Don't try and mess with me.");
                 System.Environment.Exit (0);
